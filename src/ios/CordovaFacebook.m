@@ -22,7 +22,7 @@
     [FBSDKProfile enableUpdatesOnAccessTokenChange:YES];
 
     self.fbLogin = [[FBSDKLoginManager alloc] init];
-    self.fbLogin.loginBehavior = FBSDKLoginBehaviorSystemAccount;
+    self.fbLogin.loginBehavior = FBSDKLoginBehaviorNative;
 }
 
 + (NSDictionary*) arrayAsDictionary:(NSArray*) array
